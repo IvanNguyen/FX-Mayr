@@ -1,0 +1,23 @@
+version: '2.3'
+
+services:
+  static_nginx:
+    build:
+      context: .
+      dockerfile: ./src-static/.docker/nginx/Dockerfile
+    restart: "no"
+    volumes:
+      - ./src-static/public:/usr/share/nginx/html:delegated
+
+  static_buildbox:
+    image: node:10-alpine
+    container_name: ${COMPOSE_PROJECT_NAME}_static_buildbox
+    restart: "no"
+    working_dir: /project
+    user: node
+    volumes:
+      - ./src-static:/project:delegated
+    command: ["yarn", "run", "serve"]
+    ports:
+      - "3000:3000"
+      - "3001:3001"

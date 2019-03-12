@@ -1,0 +1,9 @@
+version: '2.3'
+
+services:
+  static_nginx:
+    image: ${CONTAINER_REGISTRY}/${ENVIRONMENT}_static_nginx:${VERSION}
+    container_name: ${COMPOSE_PROJECT_NAME}_static_nginx
+    restart: always
+    ports:
+      - "${STATIC_HTTP_PORT}:80"

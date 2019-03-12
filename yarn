@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+BUILDBOX_CONTAINER="$(docker ps -q -f NAME=static_buildbox)"
+docker exec -ti $BUILDBOX_CONTAINER sh -c "yarn $*"

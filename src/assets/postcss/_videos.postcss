@@ -1,0 +1,87 @@
+.videos-wrapper {
+    background-color: $background-color-2;
+    .container {
+        height: 0;
+    }
+    .image {
+        text-align: center;
+        padding: 60px;
+        background: url('../img/main-bg.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .videos {
+        &__heading-block {
+            margin-bottom: 50px;
+            span {
+                margin-bottom: 7px;
+                color: #1abc9c!important;
+                display: block;
+                margin: 0 0 5px;
+                font-size: 16px;
+                font-family: crete round,serif;
+                font-style: italic;
+                font-weight: 400;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h3 {
+                margin-bottom: 0;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $heading-text-color;
+            }
+        }
+        text-align: center;
+        padding: 60px;
+        &__modal {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        img.videos__background {
+                /* width: 100%; */
+                max-width: 100%;
+                height: auto;
+            }
+        img.videos__play-button {
+            display: block;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+/* Video-modal styles */
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+.modal-content {
+    width: 70%!important;
+    margin: 50px auto !important;
+}
+.btn:focus {
+    box-shadow: none!important;
+}

@@ -1,0 +1,13 @@
+yarn-debug.log
+yarn-error.log
+/node_modules
+
+.DS_Store
+.idea
+.project
+Thumbs.db
+
+*.swp
+*.swo
+
+.env

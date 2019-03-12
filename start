@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -aeuo pipefail
+
+# folder containing the script will be the root folder
+cd $(dirname $0)
+
+# create the dotenv file if it doesn't exist
+if [ ! -f ../.env ]; then
+  cp ../.env.default ../.env
+fi
+
+source ../.env
+
+# set COMPOSE_PROJECT_NAME environment variable that will be used by the networks
+COMPOSE_PROJECT_NAME="${PROJECT}_${ENVIRONMENT}"
+DOCKER_HOST_UID=$(id -u)
+DOCKER_HOST_GID=$(id -g)
+VERSION=$(cat ../VERSION)
+
+echo "install modules"
+# run each install command that is specified inside .docker/... 
+find ./.docker/* -maxdepth 1 -name "install" | xargs grep -h . | while read line; do
+  echo $line
+  echo "" | docker-compose -f ../docker-compose.yml $(find -maxdepth 1 -name 'docker-compose.*' -exec echo '-f {} ' \;) run --rm ${line}
+done
+ 
+echo "start modules"
+docker-compose -f ../docker-compose.yml $(find -maxdepth 1 -name 'docker-compose.*' -exec echo '-f {} ' \;) up 
