@@ -2,23 +2,22 @@
 html
   head
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    title Canvas Theme
+    meta(name="description", content="This is our description" )
+    //- more meta tag ...
+    title FX Mayr Theme
     block head_styles
       link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
       link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
-      link(href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css")
+      link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Quicksand:400,500,700')
       //- Slick
       link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
       //- Main styles
       link(rel='stylesheet', href='/assets/css/main.css')
     block head_scripts
   body
-    #wrapper
-      include ../_partials/header.pug
-      block content
-      include ../_partials/footer.pug
-    #gotoTop
-      i#button.fas.fa-angle-up
+    include ../_partials/header.pug
+    block content
+    include ../_partials/footer.pug
     block foot_scripts
       //- script(src='/assets/js/vendor-min.js')
       script(src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous")
