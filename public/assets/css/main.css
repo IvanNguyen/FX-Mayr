@@ -242,11 +242,16 @@ footer {
 @media (max-width: 768px) {
     .intro {
         margin-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 51px;
     }
 }
 .intro .qr-code-block_left {
         margin-top: -10px;
+}
+@media (max-width: 768px) {
+    .intro .qr-code-block_left {
+        margin-top: 13px;
+    }
 }
 .intro .follow-us {
         margin-right: 0;
@@ -330,11 +335,6 @@ ul.pills-tab li a.nav-link.active {
     line-height: 24px;
     border-radius: 0!important;
 }
-.tab-content>.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
 .article {
     margin-bottom: 50px;
 }
@@ -358,8 +358,10 @@ ul.pills-tab li a.nav-link.active {
             margin: 0;
         }
 .article .date-and-tag span {
+            text-transform: uppercase;
             border: 1px solid #DADADA;
             line-height: 18px;
+            padding: 3px 5px;        
         }
 .article__title {
         font-weight: 700;
@@ -368,6 +370,69 @@ ul.pills-tab li a.nav-link.active {
         line-height: 26px;
         margin-bottom: 9px;
     }
+.underline-text {
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #4a4a4a;
+    box-shadow: inset 0 -1px 0 0 #4a4a4a;
+}
+.people__info {
+    margin-bottom: 50px;
+}
+.people__info img {
+        margin-bottom: 12px;
+    }
+.people__name {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #38A6A0;
+    margin-bottom: 10px;
+}
+.people__job {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+.middle-banner {
+    margin: 100px 0;
+}
+@media (max-width: 768px) {
+    .middle-banner {
+        margin: 50px 0;
+    }
+}
+.middle-banner {
+    position: relative;
+}
+.middle-banner img {
+        height: 300px;
+        width: auto;
+        min-width: 100%;
+}
+img.lg-screen {
+    display: block;
+}
+@media (max-width: 768px) {
+    img.lg-screen {
+        display: none;
+    }
+}
+img.md-screen {
+    display: none;
+    height: 182px;
+    width: 100%;
+    /* min-width: 100%; */
+}
+@media (max-width: 768px) {
+    img.md-screen {
+        display: block;
+    }
+}
 body {
   background: white;
   font-family: 'Quicksand', sans-serif;
