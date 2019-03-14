@@ -47,14 +47,22 @@ footer {
         }
     }
 }
-.col-three {
+.col-three, .qr-code-block_right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     @media (max-width: $md-screen) {
         justify-content: center;
     }
-    .follow-us {
+    img {
+        width: 100px;
+        height: 100px;
+        @media (max-width: $md-screen) {
+            margin: 0 auto;
+        }
+    }
+}
+.follow-us {
         display: inline;
         text-align: center;
         margin-right: 16px;
@@ -66,11 +74,3 @@ footer {
             margin: 0;
         }
     }
-    img {
-        width: 100px;
-        height: 100px;
-        @media (max-width: $md-screen) {
-            margin: 0 auto;
-        }
-    }
-}

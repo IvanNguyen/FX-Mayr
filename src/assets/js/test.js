@@ -1,5 +1,5 @@
 const a = function() {
-  console.log('run');
+  console.log('test');
 }
 
 export default a;

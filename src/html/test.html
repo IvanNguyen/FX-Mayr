@@ -1,21 +1,19 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary video-btn" data-toggle="modal"
-  data-src="https://www.youtube.com/embed/7c39lfT6Sr0" data-target="#myModal">
-  Play Video 1 - autoplay
-</button>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <!-- 16:9 aspect ratio -->
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+            aria-controls="pills-home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+            aria-controls="pills-profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+            aria-controls="pills-contact" aria-selected="false">Contact</a>
+    </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, excepturi?</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius officiis neque mollitia commodi accusamus ex quo expedita iure, praesentium quam, cum sequi doloribus similique. Corporis, iste voluptates. Rem, reprehenderit!</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eum soluta magni fugit, id deleniti pariatur culpa dolorem officia totam, harum laborum nulla facilis sit nisi mollitia quo, nobis vitae quod commodi veritatis voluptatibus blanditiis. Natus delectus dicta obcaecati molestias, animi doloribus debitis distinctio reiciendis tempora voluptatum maxime voluptatem optio.</div>
 </div>

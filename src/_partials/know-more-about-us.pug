@@ -1,0 +1,45 @@
+section.know-more-about-us
+    .container
+        h3.section-title
+            | Know more about us
+        ul.pills-tab.nav.nav-pills(role='tablist')
+            li.nav-item
+                a#pills-discover-tab.nav-link.active(data-toggle='pill', href='#pills-discover', role='tab', aria-controls='pills-discover', aria-selected='true') Discover
+            li.nav-item
+                a#pills-people-tab.nav-link(data-toggle='pill', href='#pills-people', role='tab', aria-controls='pills-people', aria-selected='false') People
+        #pills-tabContent.tab-content
+            #pills-discover.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-discover-tab')
+                .col-md-4
+                    .article
+                        img(src="../assets/img/ice-cream.png", alt="ice-cream-image")
+                        .date-and-tag
+                            p June 22, 2018
+                            span Nutrition
+                        p.article__title
+                            | A deliciously cool treat for a hot sunny day
+                        p.text-content
+                            | Hot days call for ice-cream! Just because you are on the cure, it doesn’t mean you have to miss out, with our Chef’s tempting recipes for sugar free ice cream. 
+                .col-md-4
+                    .article
+                        img(src="../assets/img/swim.png", alt="swim-image")
+                        .date-and-tag
+                            p June 17, 2018
+                            span Medicine
+                        p.article__title
+                            | Swim through the summer
+                        p.text-content
+                            | During the hot summer days, Lake Wörthersee is a swimmers’ paradise with crystal clear waters that are both refreshing and invigorating and water temperatures that can reach up to 28 degrees in high summer. 
+                .col-md-4
+                    .article
+                        img(src="../assets/img/drink.png", alt="drink-image")
+                        .date-and-tag
+                            p June 4, 2018
+                            span Nutrition
+                        p.article__title
+                            | Water, the elixir of lifey
+                        p.text-content
+                            | We all know our bodies are made up of approximately 70% water, so why is it so important to drink plenty of it? How does water help with the Mayr fasting cure? And how can it benefit the appearance of our skin? 
+                
+            #pills-people.tab-pane.fade(role='tabpanel', aria-labelledby='pills-people-tab')
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius officiis neque mollitia commodi accusamus ex quo expedita iure, praesentium quam, cum sequi doloribus similique. Corporis, iste voluptates. Rem, reprehenderit!
+        
