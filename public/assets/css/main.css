@@ -1,4 +1,5 @@
 /* @import 'bootstrap'; */
+/* theme components */
 .header {
     padding: 20px 0;
 }
@@ -184,19 +185,24 @@ footer {
             line-height: 20px;
             margin: 0;
         }
+/* homepage components */
 .top-banner {
     position: relative;
+    height: 640px;
+}
+@media (max-width: 768px) {
+    .top-banner {
+        height: 260px;
+    }
 }
 .top-banner .top-banner__text {
         position: absolute;
         top: 183px;
-        left: 150px;
         color: white;
-    }
+}
 @media (max-width: 768px) {
     .top-banner .top-banner__text {
         top: 41px;
-        left: 14px;
     }
 }
 .top-banner .top-banner__text span {
@@ -225,14 +231,16 @@ footer {
         line-height: 40px;
     }
 }
+.top-banner .simpleParallax {
+        height: 100%;
+}
 .top-banner .simpleParallax img {
-            height: 640px;
             width: auto;
             min-width: 100%;
         }
 @media (max-width: 768px) {
     .top-banner .simpleParallax img {
-        height: 260px;
+        height: 320px;
     }
 }
 .intro {
@@ -256,6 +264,9 @@ footer {
 .intro .follow-us {
         margin-right: 0;
 }
+.intro .text-conent {
+        font-size: 14px;
+}
 @media (max-width: 768px) {
     .intro .text-conent {
         margin-bottom: 41px;
@@ -277,7 +288,7 @@ h3.section-title {
 }
 .text-content {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #666666;
     line-height: 26px;
 }
@@ -305,12 +316,6 @@ h3.section-title {
         padding-left: 15px;
     }
 }
-box-shadow: inset 0 -1px 0 0 #38A6A0;
-font-family: Quicksand-Bold;
-font-size: 16px;
-color: #38A6A0;
-letter-spacing: 0;
-line-height: 24px;
 .know-more-about-us {
 }
 ul.pills-tab {
@@ -335,6 +340,13 @@ ul.pills-tab li a.nav-link.active {
     line-height: 24px;
     border-radius: 0!important;
 }
+ul.pills-tab li:hover a {
+        background-color: transparent;
+        box-shadow: inset 0 -1px 0 0 #38A6A0;
+        color: #38A6A0;
+        line-height: 24px;
+        border-radius: 0!important;
+    }
 .article {
     margin-bottom: 50px;
 }
@@ -400,39 +412,187 @@ ul.pills-tab li a.nav-link.active {
 }
 .middle-banner {
     margin: 100px 0;
+    height: 300px;
 }
 @media (max-width: 768px) {
     .middle-banner {
         margin: 50px 0;
+        height: 182px;
     }
 }
-.middle-banner {
-    position: relative;
+.middle-banner .simpleParallax {
+        height: 100%;
 }
-.middle-banner img {
-        height: 300px;
-        width: auto;
-        min-width: 100%;
-}
-img.lg-screen {
+.middle-banner .simpleParallax img {
+            width: auto;
+            min-width: 100%;
+        }
+.lg-background {
     display: block;
 }
 @media (max-width: 768px) {
-    img.lg-screen {
+    .lg-background {
         display: none;
     }
 }
-img.md-screen {
+.md-background {
     display: none;
-    height: 182px;
-    width: 100%;
-    /* min-width: 100%; */
 }
 @media (max-width: 768px) {
-    img.md-screen {
+    .md-background {
         display: block;
     }
 }
+.features {
+    margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+    .features {
+        margin-bottom: 52px;
+    }
+}
+@media (max-width: 768px) {
+    .features__post {
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 768px) {
+    .features__title-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+.features__title-block img {
+            flex: 50%;
+            padding-right: 14px;
+}
+.features__title-block p {
+            flex: 50%;
+}
+.bigger-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #38A6A0;
+    line-height: 34px;
+    margin-bottom: 9px;
+}
+.video {
+    margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+    .video {
+        margin-bottom: 50px;
+    }
+}
+.video img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .video img {
+        width: 100%;
+    }
+}
+.bot-banner img {
+        width: auto;
+        min-width: 100%;
+        height: 300px;
+    }
+@media (max-width: 768px) {
+    .bot-banner img {
+        height: 216px;
+        width: 100%;
+    }
+}
+/* fx-mayr page components */
+.page-item-banner {
+    margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+    .page-item-banner {
+        margin-bottom: 50px;
+    }
+}
+.page-item-banner .simpleParallax {
+        height: 100%;
+}
+.page-item-banner .simpleParallax img {
+            width: auto;
+            min-width: 100%;
+        }
+@media (max-width: 768px) {
+    .page-item-banner .simpleParallax img {
+        height: 180px;
+    }
+}
+.page-item-banner .banner {
+        height: 360px;
+        margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+    .page-item-banner .banner {
+        height: 180px;
+        margin-bottom: 20px;
+    }
+}
+.page-item-banner p.page-heading {
+        font-size: 60px;
+        color: #4a4a4a;
+        text-align: center;
+        line-height: 70px;
+        margin: 0;
+}
+.fx-mayr-service {
+    margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+    .fx-mayr-service {
+        margin-bottom: 10px;
+    }
+}
+.fx-mayr-service ul {
+        margin-bottom: 50px;
+}
+.fx-mayr-service .features__post {
+        margin-bottom: 42px;
+}
+.fx-mayr-service h3.section-title {
+        margin-bottom: 30px;
+}
+.fx-mayr-service .features__title-block img {
+            padding: 0;
+        }
+@media (max-width: 768px) {
+    .fx-mayr-service .features__title-block {
+        display: block;
+    }
+}
+/* display: flex;
+    margin-bottom: 40px;
+    .project__image {
+        flex: 40%;
+        flex-shrink: 0;
+    } */
+.project-block .project__content {
+        /* flex: 60%; */
+        padding-left: 24px;
+    }
+.project-block .project__content .project__title {
+            font-weight: 700;
+            font-size: 22px;
+            color: #38A6A0;
+            line-height: 34px;
+            margin-bottom: 9px;
+        }
+.project-block .text-content p {
+            margin-bottom: 10px;
+        }
+.project-block .text-content ul {
+            padding-left: 16px;
+            margin: 0;
+        }
 body {
   background: white;
   font-family: 'Quicksand', sans-serif;
@@ -441,4 +601,5 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }

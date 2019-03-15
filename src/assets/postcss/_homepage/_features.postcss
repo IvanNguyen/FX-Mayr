@@ -1,0 +1,30 @@
+.features {
+    margin-bottom: 100px;
+    @media (max-width: $md-screen) {
+        margin-bottom: 52px;
+    }
+    &__post {
+        @media (max-width: $md-screen) {
+            margin-bottom: 32px;
+        }
+    }
+    &__title-block {
+        @media (max-width: $md-screen) {
+            display: flex;
+        }
+        img {
+            flex: 50%;
+            padding-right: 14px;
+        }
+        p {
+            flex: 50%;
+        }
+    }
+}
+.bigger-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: $title-color;
+    line-height: 34px;
+    margin-bottom: 9px;
+}

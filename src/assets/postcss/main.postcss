@@ -1,14 +1,19 @@
 /* @import 'bootstrap'; */
+/* theme components */
 @import './_variables.postcss';
 @import './_header.postcss';
 @import './_footer.postcss';
-@import './_top-banner.postcss';
-@import './_intro.postcss';
-@import './_know-more-about-us.postcss';
-@import './_middle-banner.postcss';
-@import './_articles.postcss';
-@import './_video.postcss';
-@import './_bot-banner.postcss';
+/* homepage components */
+@import './_homepage/_top-banner.postcss';
+@import './_homepage/_intro.postcss';
+@import './_homepage/_know-more-about-us.postcss';
+@import './_homepage/_middle-banner.postcss';
+@import './_homepage/_features.postcss';
+@import './_homepage/_video.postcss';
+@import './_homepage/_bot-banner.postcss';
+/* fx-mayr page components */
+@import './_fx-mayr/_fx-mayr-top-banner.postcss';
+@import './_fx-mayr/_fx-mayr-service.postcss';
 
 body {
   background: white;
@@ -19,4 +24,5 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }

@@ -1,11 +1,12 @@
 extends _templates/home_template.pug
-
+block title
+  title China's Leader in Innovative and Preventative Medical-Tourism - FX Mayr
 block page_content
   main
-    include ./_partials/top-banner.pug
-    include ./_partials/intro.pug
-    include ./_partials/know-more-about-us.pug
-    include ./_partials/middle-banner.pug
-    include ./_partials/articles.pug
-    include ./_partials/video.pug
-    include ./_partials/bot-banner.pug
+    include ./_partials/_homepage/top-banner.pug
+    include ./_partials/_homepage/intro.pug
+    include ./_partials/_homepage/know-more-about-us.pug
+    include ./_partials/_homepage/middle-banner.pug
+    include ./_partials/_homepage/features.pug
+    include ./_partials/_homepage/video.pug
+    include ./_partials/_homepage/bot-banner.pug
