@@ -1,5 +1,101 @@
 .teams {
+    margin-bottom: 100px;
+    @media (max-width: $md-screen) {
+        margin-bottom: 50px;
+    }
+    ul.pills-tab {
+        margin-bottom: 40px;
+    }
     ul.pills-tab li a {
         margin: 0 30px;
+    }
+    .media:not(:last-child) {
+        margin-bottom: 60px;
+        @media (max-width: $md-screen) {
+            margin-bottom: 20px;
+        }
+    }
+    .media-avatar {
+        width: 100%;
+        max-width: 267px;
+    }
+    .media-body {
+        padding-left: 24px;
+    }
+    .people__job {
+        margin-bottom: 9px;
+    }
+    .text-content {
+        margin-bottom: 21px;
+        p {
+            margin: 0;
+            line-height: 22px;
+        }
+    }
+}
+.play-video {
+    cursor: pointer;
+    img {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+    span {
+        box-shadow: inset 0 -1px 0 0 #4A4A4A;
+        font-weight: 700;
+        font-size: 16px;
+        color: $see-all-button-color;
+        line-height: 24px;
+    }
+}
+/* Mobile */
+.teams .media {
+    @media (max-width: $md-screen) {
+        display: block;
+        .media-avatar {
+            width: 50%;
+            float: left;
+        }
+        .media-body {
+            padding: 0;
+        }
+        .people__info {
+            position: relative;
+        }
+        .people__name {
+            width: 50%;
+            float: left;
+            padding-left: 14px;
+        }
+        .people__job {
+            width: 50%;
+            float: right;
+            padding-left: 14px;
+        }
+        .toggle-detail {
+            padding-left: 14px;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 18px;
+            color: $tab-color;
+            display: block;
+            float: right;
+            width: 50%;
+            text-align: left;
+            position: absolute;
+            left: 50%;
+            bottom: 4%;
+            cursor: pointer;
+            outline: none;
+            i {
+                padding-left: 6px;
+            }
+        }
+    }
+    .collapseItem {
+        margin-bottom: 50px;
     }
 }

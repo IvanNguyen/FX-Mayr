@@ -1,4 +1,10 @@
 .know-more-about-us {
+    .people__info {
+        margin-bottom: 50px;
+        img {
+            margin-bottom: 12px;
+        }
+    }
 }
 ul.pills-tab {
     display: flex;
@@ -32,32 +38,32 @@ ul.pills-tab {
     img {
         margin-bottom: 10px;
     }
-    .date-and-tag {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 700;
-        font-size: 11px;
-        color: $date-and-tag-color;
-        margin-bottom: 10px;
-        p {
-            text-transform: uppercase;
-            line-height: 18px;
-            margin: 0;
-        }
-        span {
-            text-transform: uppercase;
-            border: 1px solid #DADADA;
-            line-height: 18px;
-            padding: 3px 5px;        
-        }
-    }
     &__title {
         font-weight: 700;
         font-size: 18px;
         color: $title-color;
         line-height: 26px;
         margin-bottom: 9px;
+    }
+}
+.date-and-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 11px;
+    color: $date-and-tag-color;
+    margin-bottom: 10px;
+    p {
+        text-transform: uppercase;
+        line-height: 18px;
+        margin: 0;
+    }
+    span {
+        text-transform: uppercase;
+        border: 1px solid #DADADA;
+        line-height: 18px;
+        padding: 3px 5px;        
     }
 }
 .underline-text {
@@ -67,12 +73,9 @@ ul.pills-tab {
     line-height: 24px;
     color: $see-all-button-color;
     box-shadow: inset 0 -1px 0 0 $see-all-button-color;
+    cursor: pointer;
 }
 .people__info {
-    margin-bottom: 50px;
-    img {
-        margin-bottom: 12px;
-    }
 }
 .people__name {
     font-size: 18px;

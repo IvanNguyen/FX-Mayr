@@ -7,3 +7,17 @@ $(document).ready(function () {
         overfow: false,
     });
 });
+//trigger collapse people-items
+(function ($) {
+    var $window = $(window)
+
+    function resize() {
+        if ($window.width() < 768) {
+            return $('.collapseItem').addClass('collapse');
+        }
+        $('.collapseItem').removeClass('collapse');
+    }
+    $window
+        .resize(resize)
+        .trigger('resize');
+})(jQuery);

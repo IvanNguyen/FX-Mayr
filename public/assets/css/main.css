@@ -100,12 +100,12 @@ li.header__weixin-qrcode:hover .header__weixin-qrcode__popover {
     color: #38A6A0!important;
 }
 footer {
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 @media (max-width: 768px) {
     footer {
         text-align: center;
-        padding: 30px 0;
+        padding-bottom: 30px;
     }
 }
 .col-one img {
@@ -250,7 +250,7 @@ footer {
 @media (max-width: 768px) {
     .intro {
         margin-top: 30px;
-        margin-bottom: 51px;
+        margin-bottom: 40px;
     }
 }
 .intro .qr-code-block_left {
@@ -316,8 +316,12 @@ h3.section-title {
         padding-left: 15px;
     }
 }
-.know-more-about-us {
-}
+.know-more-about-us .people__info {
+        margin-bottom: 50px;
+    }
+.know-more-about-us .people__info img {
+            margin-bottom: 12px;
+        }
 ul.pills-tab {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -353,34 +357,34 @@ ul.pills-tab li:hover a {
 .article img {
         margin-bottom: 10px;
     }
-.article .date-and-tag {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 700;
-        font-size: 11px;
-        color: #9b9b9b;
-        margin-bottom: 10px;
-    }
-.article .date-and-tag p {
-            text-transform: uppercase;
-            line-height: 18px;
-            margin: 0;
-        }
-.article .date-and-tag span {
-            text-transform: uppercase;
-            border: 1px solid #DADADA;
-            line-height: 18px;
-            padding: 3px 5px;        
-        }
 .article__title {
         font-weight: 700;
         font-size: 18px;
         color: #38A6A0;
         line-height: 26px;
         margin-bottom: 9px;
+    }
+.date-and-tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 11px;
+    color: #9b9b9b;
+    margin-bottom: 10px;
+}
+.date-and-tag p {
+        text-transform: uppercase;
+        line-height: 18px;
+        margin: 0;
+    }
+.date-and-tag span {
+        text-transform: uppercase;
+        border: 1px solid #DADADA;
+        line-height: 18px;
+        padding: 3px 5px;        
     }
 .underline-text {
     padding: 5px 0;
@@ -389,13 +393,10 @@ ul.pills-tab li:hover a {
     line-height: 24px;
     color: #4a4a4a;
     box-shadow: inset 0 -1px 0 0 #4a4a4a;
+    cursor: pointer;
 }
 .people__info {
-    margin-bottom: 50px;
 }
-.people__info img {
-        margin-bottom: 12px;
-    }
 .people__name {
     font-size: 18px;
     line-height: 26px;
@@ -448,7 +449,7 @@ ul.pills-tab li:hover a {
 }
 @media (max-width: 768px) {
     .features {
-        margin-bottom: 52px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 768px) {
@@ -495,17 +496,23 @@ ul.pills-tab li:hover a {
         width: 100%;
     }
 }
-.bot-banner img {
-        width: auto;
-        min-width: 100%;
-        height: 300px;
-    }
+.bot-banner {
+    height: 300px;
+    margin-bottom: 20px;
+}
 @media (max-width: 768px) {
-    .bot-banner img {
+    .bot-banner {
         height: 216px;
-        width: 100%;
+        margin-bottom: 30px;
     }
 }
+.bot-banner .simpleParallax {
+        height: 100%;
+}
+.bot-banner .simpleParallax img {
+            width: auto;
+            min-width: 100%;
+        }
 /* fx-mayr page components */
 .page-item-banner {
     margin-bottom: 60px;
@@ -554,6 +561,15 @@ ul.pills-tab li:hover a {
 }
 .fx-mayr-service ul.pills-tab li a {
         margin: 0 40px;
+        font-size: 22px;
+}
+.fx-mayr-service ul.pills-tab li:first-child a {
+        margin-left: 0;
+        margin-right: 40px;
+}
+.fx-mayr-service ul.pills-tab li:last-child a {
+        margin-right: 0;
+        margin-left: 40px;
 }
 .fx-mayr-service ul {
         margin-bottom: 50px;
@@ -602,9 +618,201 @@ ul.pills-tab li:hover a {
     margin-bottom: 100px;
 }
 /* people page components */
+.teams {
+    margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+    .teams {
+        margin-bottom: 50px;
+    }
+}
+.teams ul.pills-tab {
+        margin-bottom: 40px;
+}
 .teams ul.pills-tab li a {
         margin: 0 30px;
+}
+.teams .media:not(:last-child) {
+        margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+    .teams .media:not(:last-child) {
+        margin-bottom: 20px;
     }
+}
+.teams .media-avatar {
+        width: 100%;
+        max-width: 267px;
+}
+.teams .media-body {
+        padding-left: 24px;
+}
+.teams .people__job {
+        margin-bottom: 9px;
+}
+.teams .text-content {
+        margin-bottom: 21px;
+}
+.teams .text-content p {
+            margin: 0;
+            line-height: 22px;
+        }
+.play-video {
+    cursor: pointer;
+}
+.play-video img {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+.play-video span {
+        box-shadow: inset 0 -1px 0 0 #4A4A4A;
+        font-weight: 700;
+        font-size: 16px;
+        color: #4a4a4a;
+        line-height: 24px;
+    }
+/* Mobile */
+@media (max-width: 768px) {
+    .teams .media {
+        display: block;
+    }
+    .teams .media .media-avatar {
+            width: 50%;
+            float: left;
+    }
+    .teams .media .media-body {
+            padding: 0;
+    }
+    .teams .media .people__info {
+            position: relative;
+    }
+    .teams .media .people__name {
+            width: 50%;
+            float: left;
+            padding-left: 14px;
+    }
+    .teams .media .people__job {
+            width: 50%;
+            float: right;
+            padding-left: 14px;
+    }
+    .teams .media .toggle-detail {
+            padding-left: 14px;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 18px;
+            color: #9b9b9b;
+            display: block;
+            float: right;
+            width: 50%;
+            text-align: left;
+            position: absolute;
+            left: 50%;
+            bottom: 4%;
+            cursor: pointer;
+            outline: none;
+    }
+            .teams .media .toggle-detail i {
+                padding-left: 6px;
+            }
+}
+.teams .media .collapseItem {
+        margin-bottom: 50px;
+}
+/* discover page components */
+.discover-post {
+    margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+    .discover-post {
+        margin-bottom: 50px;
+    }
+    .discover-post img {
+            margin-bottom: 12px;
+    }
+}
+.discover-post .date-and-tag {
+        justify-content: flex-start;
+        margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+    .discover-post .date-and-tag {
+        margin-bottom: 8px;
+    }
+}
+.discover-post .date-and-tag span {
+            margin-left: 20px;
+}
+.discover-post__content {
+        margin-bottom: 21px;
+}
+@media (max-width: 768px) {
+    .discover-post__content {
+        margin-bottom: 22px;
+    }
+}
+.discover-post__title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #38A6A0;
+    line-height: 60px;
+    margin-bottom: 9px;
+}
+.discover-filter {
+    margin-bottom: 43px;
+}
+@media (max-width: 768px) {
+    .discover-filter {
+        margin-bottom: 20px;
+    }
+}
+.discover-filter ul.pills-tab {
+        margin-bottom: 40px;
+}
+.discover-filter .article {
+        margin-bottom: 57px;
+}
+@media (max-width: 768px) {
+    .discover-filter .article {
+        margin-bottom: 30px;
+    }
+    .discover-filter .article p.text-content {
+                display: none;
+    }
+}
+.discover-filter__search-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .discover-filter__search-input {
+        margin-bottom: 30px;
+    }
+}
+.discover-filter__search-input input {
+        outline: none;
+        border: none;
+        width: 324px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4A4A4A;
+        opacity: 0.5;
+}
+.discover-filter__search-input .search-icon {
+        height: 16px;
+        width: 16px;
+}
 body {
   background: white;
   font-family: 'Quicksand', sans-serif;
