@@ -6,6 +6,11 @@ $(document).ready(function () {
         scale: 1.2,
         overfow: false,
     });
+
+    // Would you like to be called ?
+    $('#be-called').click(function () {
+        $('.called-info, #optional-phone-number').toggle(); 
+    });
 });
 //trigger collapse people-items
 (function ($) {
@@ -21,3 +26,7 @@ $(document).ready(function () {
         .resize(resize)
         .trigger('resize');
 })(jQuery);
+// Jquery Datepicker
+$(function () {
+    $("#datepicker").datepicker();
+});

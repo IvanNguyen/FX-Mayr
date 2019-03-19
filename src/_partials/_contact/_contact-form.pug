@@ -1,0 +1,28 @@
+section
+    .container
+        .contact-form
+            form
+                input(type='text', name='name', placeholder="Name*", required)
+                input(type='email', name='email', placeholder="Email address*", required)
+                .checkbox-called
+                    input(type='checkbox', id="check-called", name='wanna-be-called', value='yes')
+                    label(for="check-called", id="be-called")
+                        | Would you like to be called?
+                input(type='tel',id="optional-phone-number" name='telephone-number', placeholder="Phone number")
+                .called-info
+                    input(type='tel',id="required-phone-number" name='telephone-number', placeholder="Phone number*", required)
+                    .call-time
+                        .call-date.d-inline-block
+                            .d-flex.align-items-center
+                                input(type='text', id="datepicker", name='call-date', placeholder="June 4, 2018", required)
+                                i.far.fa-calendar-alt
+                        .radio-time.radio-time_morning
+                            input(type='radio', id="morning-call", name='call-time', value='morning' checked)
+                            label(for="morning-call")
+                                | Morning
+                        .radio-time.radio-time_afternoon
+                            input(type='radio', id="afternoon-call", name='call-time', value='afternoon')
+                            label(for="afternoon-call")
+                                | Afternoon
+                textarea(name='message', placeholder='Message', rows='10', cols='50', required='')
+                input(type='submit', value='Send')

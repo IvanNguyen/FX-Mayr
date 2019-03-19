@@ -797,6 +797,7 @@ ul.pills-tab li:hover a {
 @media (max-width: 768px) {
     .discover-filter__search-input {
         margin-bottom: 30px;
+        width: 100%;
     }
 }
 .discover-filter__search-input input {
@@ -812,6 +813,241 @@ ul.pills-tab li:hover a {
 .discover-filter__search-input .search-icon {
         height: 16px;
         width: 16px;
+}
+.discover-article__heading-block, .discover-article__content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.discover-article__heading-block img, .discover-article__content img {
+        margin-bottom: 20px;
+    }
+@media (max-width: 768px) {
+    .discover-article__heading-block img, .discover-article__content img {
+        margin-bottom: 10px;
+    }
+}
+.discover-article__heading-block .article, .discover-article__content .article {
+        margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .discover-article__heading-block .article, .discover-article__content .article {
+        margin-bottom: 30px;
+    }
+}
+.discover-article__heading-block .date-and-tag, .discover-article__content .date-and-tag {
+        justify-content: flex-start;
+}
+.discover-article__heading-block .date-and-tag span, .discover-article__content .date-and-tag span {
+            margin-left: 20px;
+        }
+@media (max-width: 768px) {
+    .discover-article__heading-block .date-and-tag, .discover-article__content .date-and-tag {
+        margin-bottom: 8px;
+    }
+}
+.discover-article__heading-block p.article__title, .discover-article__content p.article__title {
+        font-weight: 700;
+        font-size: 40px;
+        color: #38A6A0;
+        line-height: 60px;
+        margin-bottom: 20px;
+}
+.discover-article__heading-block p.text-content, .discover-article__content p.text-content {
+        font-weight: 700;
+        font-size: 16px;
+        color: #4A4A4A;
+        line-height: 28px;
+}
+.discover-article {
+    margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+    .discover-article {
+        margin-bottom: 50px;
+    }
+}
+/* contact page components */
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+.contact-form input, .contact-form textarea {
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #9b9b9b;
+        padding: .6em 0;
+        opacity: 0.5;
+        font-weight: 700;
+        font-size: 16px;
+        color: #666666;
+        line-height: 26px;
+        margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+    .contact-form input, .contact-form textarea {
+        margin-bottom: 40px;
+    }
+}
+.contact-form input[type=checkbox], .contact-form input[type=radio] {
+        width: 18px;
+        height: 18px;
+        vertical-align: sub;
+}
+.contact-form label {
+        font-weight: 700;
+        font-size: 16px;
+        color: #666666;
+        line-height: 26px;
+}
+.contact-form textarea {
+        resize: none;
+        height: 5em;
+}
+.contact-form input[type=submit] {
+        display: block;
+        opacity: 1;
+        color: #4a4a4a;
+        border-bottom-color: #4a4a4a;
+        width: auto;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+}
+.checkbox-called, .radio-time {
+    position: relative;
+    margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+    .checkbox-called, .radio-time {
+        margin-bottom: 40px;
+    }
+}
+.checkbox-called input, .radio-time input {
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -9px;
+        z-index: 100;
+        cursor: pointer;
+}
+.checkbox-called input:checked+label:before, .radio-time input:checked+label:before {
+    opacity: 1;
+}
+.checkbox-called label, .radio-time label {
+        padding-left: 25px;
+        position: relative;
+}
+.checkbox-called label:before, .radio-time label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #38a6a0;
+    left: 3px;
+    top: 50%;
+    margin-top: -6px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .1s;
+}
+.checkbox-called label:after, .radio-time label:after {
+    content: "";
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 0;
+    border: 1px solid #666;
+        box-sizing: border-box;
+    z-index: 0;
+}
+.called-info {
+    display: none;
+}
+.call-date {
+    width: 30%;
+    opacity: 0.5;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #9b9b9b;
+}
+@media (max-width: 768px) {
+    .call-date {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .call-date {
+        width: 100%;
+    }
+}
+.call-date i {
+        padding: .4em 0;
+        font-weight: 700;
+        font-size: 16px;
+        color: #666666;
+        line-height: 26px;
+}
+.call-date input {
+        opacity: 1;
+        border: none;
+}
+.radio-time {
+    display: inline-block;
+}
+.radio-time_morning {
+        margin-left: 60px;
+    }
+@media (max-width: 768px) {
+    .radio-time_morning {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 992px) {
+    .radio-time_morning {
+        margin-left: 0px;
+    }
+}
+.radio-time_afternoon {
+        margin-left: 30px;
+}
+.radio-time label:before {
+        border-radius: 50%;
+        background: #9b9b9b;
+}
+.radio-time label:after {
+        border-radius: 50%;
+}
+.called-info input[type=text] {
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: .4em 0;
+        margin-bottom: 0;
+    }
+@media (max-width: 768px) {
+    .called-info input[type=text] {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .called-info input[type=text] {
+        width: 100%;
+    }
+}
+.called-info label {
+        vertical-align: -webkit-baseline-middle;
 }
 body {
   background: white;
