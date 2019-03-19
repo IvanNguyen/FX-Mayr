@@ -13,6 +13,7 @@
     }
     img {
         height: 100%;
+        margin-bottom: 0;
         @media (max-width: $md-screen) {
             width: 148px;
             height: 100px;
@@ -79,4 +80,26 @@ li.header__weixin-qrcode {
 }
 .lang-current {
     color: $lang-current-color!important;
+}
+/* Header animation */
+.sticky-compensation-transitioner {
+    padding-bottom: 240px;
+}
+.header--sticked {
+    animation: stickyIn .2s linear;
+    animation-fill-mode: forwards;
+    position: fixed;
+    transform: translateZ(0)
+}
+/* 
+.header--sticked .header__logo img {
+    max-width: 106.5px
+} */
+@keyframes stickyIn {
+    0% {
+        transform: translateY(-100%)
+    }
+    to {
+        transform: translateY(0)
+    }
 }
