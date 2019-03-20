@@ -6,6 +6,22 @@
         }
     }
 }
+/* know-more-about-us display on mobile */
+@media (max-width: $md-screen) {
+    .dragContent {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        >div {
+            width: 80%;
+            flex-shrink: 0;
+        }
+    }
+}
+/* ---know-more-about-us display on mobile--- */
 ul.pills-tab {
     display: flex;
     justify-content: center;

@@ -466,6 +466,22 @@ h3.section-title {
 .know-more-about-us .people__info img {
             margin-bottom: 12px;
         }
+/* know-more-about-us display on mobile */
+@media (max-width: 768px) {
+    .dragContent {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden
+    }
+    .dragContent::-webkit-scrollbar {
+        display: none;
+    }
+    .dragContent >div {
+            width: 80%;
+            flex-shrink: 0;
+    }
+}
+/* ---know-more-about-us display on mobile--- */
 ul.pills-tab {
     display: -webkit-box;
     display: -ms-flexbox;
