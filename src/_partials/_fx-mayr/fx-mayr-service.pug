@@ -1,5 +1,11 @@
 section.fx-mayr-service
    .container
+        form.select-tab
+            select#select-service
+                option(value='introduction') Retreat & Club introduction 
+                option(value='retreats') The Original F.X. Mayr Retreats
+                option(value='clubs') The Original F.X. Mayr Clubs
+            .arrow
         ul.pills-tab.nav.nav-pills
             li.nav-item
                 a#retreat-club-introduction-jump.nav-link(href='#introduction') Retreat & Club introduction
@@ -7,7 +13,7 @@ section.fx-mayr-service
                 a#fx-mayr-retreat-jump.nav-link(href='#fx-mayr-retreat') The Original F.X. Mayr Retreats
             li.nav-item
                 a#fx-mayr-club-jump.nav-link(href='#fx-mayr-club') The Original F.X. Mayr Clubs
-        #retreat-club-introduction
+        .service-item.introduction#retreat-club-introduction
             h3.section-title
                 | Retreat & Club introduction
             .row
@@ -27,7 +33,7 @@ section.fx-mayr-service
                                 | The Original F.X. Mayr Club Prototype
                         p.text-content
                             | Urban retreats with the key focus on health, wellbeing and the lifestyle preferences of its members.
-        #fx-mayr-retreat
+        .service-item.retreats#fx-mayr-retreat
             h3.section-title
                 | The Original F.X. Mayr Retreats
             .project-block
@@ -49,6 +55,14 @@ section.fx-mayr-service
             p.project__title
                 | Retreats under development
             //- Tab-item section
+            form.select-tab
+                select#mySelect
+                    option(value='0') Item 1
+                    option(value='1') Item 2
+                    option(value='2') Item 3
+                    option(value='3') Item 4
+                    option(value='4') Item 5
+                .arrow
             ul.pills-tab.nav.nav-pills(role='tablist')
                 li.nav-item
                     a#pills-item1-tab.nav-link.active(data-toggle='pill', href='#pills-item1', role='tab', aria-controls='pills-item1', aria-selected='true') Item 1
@@ -111,7 +125,7 @@ section.fx-mayr-service
                 | Retreats in operation
             p.text-content
                 | Non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
-        #fx-mayr-club
+        .service-item.clubs#fx-mayr-club
             h3.section-title
                 | The Original F.X. Mayr Clubs
             .project-block
@@ -133,6 +147,14 @@ section.fx-mayr-service
             p.project__title
                 | Retreats under development
             //- Tab-item section
+            form.select-tab
+                select#mySelect
+                    option(value='0') Item 1
+                    option(value='1') Item 2
+                    option(value='2') Item 3
+                    option(value='3') Item 4
+                    option(value='4') Item 5
+                .arrow
             ul.pills-tab.nav.nav-pills(role='tablist')
                 li.nav-item
                     a#pills-item2-1-tab.nav-link.active(data-toggle='pill', href='#pills-item2-1', role='tab', aria-controls='pills-item2-1', aria-selected='true') Item 1

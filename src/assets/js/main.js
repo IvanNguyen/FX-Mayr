@@ -45,6 +45,16 @@ $(document).ready(function () {
     $('#mySelect').on('change', function (e) {
         $('#myTab li a').eq($(this).val()).tab('show');
     });
+    // Select service - Fx-Mayr page
+    $('#select-service').change(function(){
+        $('.service-item').hide();
+        $('.' + $(this).val()).show();
+      });
+    // Select category - Discover page
+    $('#select-category').change(function(){
+        $('.filterDiv').hide();
+        $('.' + $(this).val()).show();
+      });
 });
 //trigger collapse people-items
 (function ($) {

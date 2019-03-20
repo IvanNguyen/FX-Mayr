@@ -45,9 +45,19 @@
         width: 16px;
     }
 }
-.show {
-  display: block!important;
+@media screen and (min-width: $md-screen){
+    .show {
+        display: block!important;
+    }
+}
+@media screen and (max-width: $md-screen){
+    .show {
+        display: block;
+    }
 }
 .filterDiv {
     display: none;
+    @media (max-width: $md-screen) {
+        display: block;
+    }
 }
