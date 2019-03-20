@@ -5,6 +5,9 @@
     }
     ul.pills-tab{
         margin-bottom: 40px;
+        @media (max-width: $md-screen) {
+            display: none;
+        }
     }     
     .article {
         margin-bottom: 57px;
@@ -41,4 +44,10 @@
         height: 16px;
         width: 16px;
     }
+}
+.show {
+  display: block!important;
+}
+.filterDiv {
+    display: none;
 }

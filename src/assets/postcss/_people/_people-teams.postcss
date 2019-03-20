@@ -3,8 +3,19 @@
     @media (max-width: $md-screen) {
         margin-bottom: 50px;
     }
+    /* .select-tab {
+        display: none;
+        position: relative;
+        @media (max-width: $md-screen) {
+            display: block;
+            margin-bottom: 30px;
+        }
+    } */
     ul.pills-tab {
         margin-bottom: 40px;
+        @media (max-width: $md-screen) {
+            display: none;
+        }
     }
     ul.pills-tab li a {
         margin: 0 30px;
@@ -89,7 +100,9 @@
             left: 50%;
             bottom: 4%;
             cursor: pointer;
+            border: none;
             outline: none;
+            background: white;
             i {
                 padding-left: 6px;
             }
@@ -98,4 +111,39 @@
     .collapseItem {
         margin-bottom: 50px;
     }
+}
+/* select tab display on mobile style */
+.select-tab {
+        display: none;
+        position: relative;
+        @media (max-width: $md-screen) {
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+select {
+    width: 100%;
+    border: none;
+    outline: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #38A6A0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #38A6A0;
+    line-height: 24px;
+    background: transparent;
+    appearance: none;
+}
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-color: transparent #38a6a0 #38a6a0 transparent;
+    border-style: solid;
+    border-width: 1px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+    margin-right: 2px;
 }

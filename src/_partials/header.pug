@@ -1,14 +1,18 @@
 .sticky-compensation-transitioner
 header.header
-    .container
-        .row
+    .container.h-100
+        .row.h-100
             .col-12
-                .d-flex
+                .header-wrapper.d-flex
                     .header__logo-wrapper
                         a.header__logo(href="index.html")
                             img(src="../assets/img/FX-Mayr-Logo-01.png", alt="logo")
                         span.toggle-menu-button
-                            i.fas.fa-align-justify
+                            button.first-button(type='button')
+                                .animated-icon1
+                                    span
+                                    span
+                                    span
                     nav.header__navbar-wrapper
                         ul.header__nav
                             li
