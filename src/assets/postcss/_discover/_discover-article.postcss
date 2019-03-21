@@ -28,12 +28,20 @@
         color: $title-color;
         line-height: 60px;
         margin-bottom: 20px;
+        @media (max-width: $md-screen) {
+            font-size: 26px;
+            line-height: 34px;
+        }
     }
     p.text-content {
         font-weight: 700;
         font-size: 16px;
         color: #4A4A4A;
         line-height: 28px;
+        @media (max-width: $md-screen) {
+            font-size: 13px;
+            line-height: 22px;
+        }
     }
 }
 .discover-article {
@@ -48,12 +56,20 @@
         font-size: 14px;
         color: $text-color;
         line-height: 26px;
+        @media (max-width: $md-screen) {
+            font-size: 13px;
+            line-height: 22px;
+        }
         strong {
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
             font-size: 16px;
             color: $heading-color;
             line-height: 28px;
+            @media (max-width: $md-screen) {
+                font-size: 13px;
+                line-height: 22px;
+            }
         }
     }
 }

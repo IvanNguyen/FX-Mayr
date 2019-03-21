@@ -4,7 +4,7 @@
         margin-bottom: 10px;
     }
     select#select-service {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 34px;
     }
     ul.pills-tab {
@@ -44,6 +44,18 @@
     .tab-pane {
         margin-bottom: 51px;
     }
+    /* video play */
+    .video {
+        margin-bottom: 0;
+        img {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        video {
+            width: 100%;
+            left: 0;
+        }
+    }
 } 
 .project-block {
     margin-bottom: 40px;
@@ -66,6 +78,10 @@
     color: $title-color;
     line-height: 34px;
     margin-bottom: 30px;
+    @media (max-width: $md-screen) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 .article-item {
     margin-bottom: 32px;
@@ -80,6 +96,8 @@
     border-bottom: 1px solid $text-color;
     @media (max-width: $md-screen) {
         width: 60%;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 #fx-mayr-retreat, #fx-mayr-club {

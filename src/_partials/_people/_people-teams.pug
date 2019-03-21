@@ -2,10 +2,11 @@ section.teams
     .container
         form.select-tab
             select#mySelect
-                option(value='0') Home
-                option(value='1') Profile
-                option(value='2') Messages
-                option(value='3') Settings
+                option(value='0') Executive Team
+                option(value='1') Retreats Executive Teams
+                option(value='2') Clubs Executive Teams
+                option(value='3') International Experts
+                option(value='4') Partner & Sponsors
             .arrow
         ul#myTab.pills-tab.nav.nav-pills(role='tablist')
             li.nav-item
@@ -39,10 +40,21 @@ section.teams
                                     | Since 2009 Mr Schulz-Lobeck has been developed and launched international Medical Wellness projects, inter alia, with the long-standing managing director/shareholder of the Lanserhof Prof. Andreas Wieser, highly recommended F.X. Mayr physicians like Dr Jakobitsch, awarding winning architects, Medical Wellness experts, like Dr. Dahmen-Ingenhoven.
                                 p
                                     | In China, Mr Schulz-Lobeck, was managing the overall medical wellness concept development and implementation of the world-class Sangha Retreat by Octave (Suzhou) which opened 2017.
-                            .play-video
+                            // Button trigger modal
+                            .play-video.video-btn(data-toggle='modal', data-src='https://www.youtube.com/embed/IHNzOHi8sJs', data-target='#myModal')
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
+                                //- // Modal
+                                //- #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                //-     .modal-dialog(role='document')
+                                //-         .modal-content
+                                //-             .modal-body
+                                //-                 button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                //-                     span(aria-hidden='true') &times;
+                                //-                 // 16:9 aspect ratio
+                                //-                 .embed-responsive.embed-responsive-16by9
+                                //-                     iframe#video.embed-responsive-item(src='', allowscriptaccess='always', allow='autoplay')
                 .media
                     .media-avatar
                         img(src='../assets/img/people-02.png', alt='people-02-image')
@@ -60,7 +72,8 @@ section.teams
                                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
                                 p
                                     | Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
-                            .play-video
+                            // Button trigger modal
+                            .play-video.video-btn(data-toggle='modal', data-src='https://www.youtube.com/embed/A0JjWpRiM2E', data-target='#myModal')
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
@@ -81,7 +94,8 @@ section.teams
                                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
                                 p
                                     | Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
-                            .play-video
+                            // Button trigger modal
+                            .play-video.video-btn(data-toggle='modal', data-src='https://www.youtube.com/embed/3AtDnEC4zak', data-target='#myModal')
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
@@ -102,11 +116,12 @@ section.teams
                                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
                                 p
                                     | Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
-                            .play-video
+                            // Button trigger modal
+                            .play-video.video-btn(data-toggle='modal', data-src='https://www.youtube.com/embed/GIDoQsQyS0s', data-target='#myModal')
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
-            #pills-Retreats-Executive-Teams.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-Executive-Team-tab')
+            #pills-Retreats-Executive-Teams.tab-pane.fade(role='tabpanel', aria-labelledby='pills-Retreats-Executive-Teams-tab')
                 .media
                     .media-avatar
                         img(src='../assets/img/people-02.png', alt='people-02-image')
@@ -124,7 +139,8 @@ section.teams
                                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
                                 p
                                     | Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
-                            .play-video
+                            // Button trigger modal
+                            .play-video.video-btn(data-toggle='modal', data-src='https://www.youtube.com/embed/GIDoQsQyS0s', data-target='#myModal')
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
@@ -145,7 +161,18 @@ section.teams
                                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
                                 p
                                     | Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
-                            .play-video
+                            // Button trigger modal
+                            .play-video.video-btn(data-toggle='modal', data-src='https://www.youtube.com/embed/3AtDnEC4zak', data-target='#myModal')
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
+            // Modal         
+            #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-body
+                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                span(aria-hidden='true') &times;
+                            // 16:9 aspect ratio
+                            .embed-responsive.embed-responsive-16by9
+                                iframe#video.embed-responsive-item(src='', allowscriptaccess='always', allow='autoplay')

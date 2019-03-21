@@ -1,3 +1,15 @@
+// Add active class to the current button (highlight it)
+var header = document.getElementById("header__nav");
+var menuItem = header.getElementsByClassName("menu__item");
+for (var i = 0; i < menuItem.length; i++) {
+    menuItem[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active-menu");
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active-menu", "");
+        }
+        this.className += " active-menu";
+    });
+}
 $(document).ready(function () {
     var images = document.getElementsByClassName('parallax');
     var instances = new simpleParallax(images, {
@@ -6,7 +18,10 @@ $(document).ready(function () {
         scale: 1.2,
         overfow: false,
     });
-
+    // $("a").click(function (event) {
+    //     // code ...
+    //     event.preventDefault()
+    // });
     // Would you like to be called ?
     $('#be-called').click(function () {
         $('.called-info, #optional-phone-number').toggle(); 
@@ -54,16 +69,43 @@ $(document).ready(function () {
     $('#select-category').change(function(){
         $('.filterDiv').hide();
         $('.' + $(this).val()).show();
-      });
+    });
+    // Play video without modal 
+    $('.video__image').on('click', function () {
+        $(this).css('opacity', '0');
+        $('.' + this.id).css("display", "block");
+    });
+    // Video modal
+    var $videoSrc;
+    $('.video-btn').click(function () {
+        $videoSrc = $(this).data("src");
+    });
+    console.log($videoSrc);
+    // when the modal is opened autoplay it  
+    $('#myModal').on('shown.bs.modal', function (e) {
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    })
+    // stop playing the youtube video when I close the modal
+    $('#myModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src', $videoSrc);
+    }) 
 });
 //trigger collapse people-items
 (function ($) {
     var $window = $(window)
     function resize() {
         if ($window.width() < 768) {
-            return $('.collapseItem').addClass('collapse');
+            return (
+                $('.collapseItem').addClass('collapse'),
+                // fx-mayr service on mobile view
+                $('.service-item').removeClass('d-block')
+            );
         }
         $('.collapseItem').removeClass('collapse');
+        // fx-mayr service on mobile view
+        $('.service-item').addClass('d-block');
     }
     $window
         .resize(resize)

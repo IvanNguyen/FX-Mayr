@@ -19,16 +19,27 @@ section.fx-mayr-service
             .row
                 .col-md-6
                     .features__post
-                        .features__title-block
-                            img(src="../assets/img/video-bg-02.png", alt="video-bg-02-image")
+                        .features__title-block.video
+                            //- include "../_homepage/video.pug"
+                            .video-wrapper
+                                img.video__image#video01( src="../assets/img/video-bg-02.png", alt="video-background-02-img")
+                                video.video__play.video01(controls='' autoplay='')
+                                    source(src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', type='video/mp4')
+                                    //- source(src='mov_bbb.ogg', type='video/ogg')
+                                    |   Your browser does not support HTML5 video.
                             p.bigger-title
                                 | The Original F.X. Mayr Retreat Prototype
                         p.text-content
                             | The Original F.X. Mayr Retreats are the guests “third space” which integrates and curates wellness, health, culinary, social and lifestyle experience. They are a personal retreat as well a social space where guests can meet friends or connect with like-minded item2 - they are “My Third Space”.
                 .col-md-6
                     .features__post
-                        .features__title-block
-                            img(src="../assets/img/video-bg-03.png", alt="video-bg-03-image")
+                        .features__title-block.video
+                            .video-wrapper
+                                img.video__image#video02( src="../assets/img/video-bg-03.png", alt="video-background-03-img")
+                                video.video__play.video02(controls='' autoplay='')
+                                    source(src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', type='video/mp4')
+                                    //- source(src='mov_bbb.ogg', type='video/ogg')
+                                    |   Your browser does not support HTML5 video.
                             p.bigger-title
                                 | The Original F.X. Mayr Club Prototype
                         p.text-content

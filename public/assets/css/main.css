@@ -189,6 +189,11 @@ li.header__weixin-qrcode:hover .header__weixin-qrcode__popover {
     height: 100%;
     position: fixed;
 }
+/* active-menu onclick */
+li.active-menu > a {
+    font-weight: 700;
+    color: #38A6A0!important;
+}
 footer {
     padding-bottom: 20px;
 }
@@ -220,6 +225,8 @@ footer {
 @media (max-width: 768px) {
     .col-two p:first-child {
         margin-bottom: 19px;
+        font-size: 22px;
+        line-height: 32px;
     }
 }
 .col-two p:last-child {
@@ -275,6 +282,12 @@ footer {
             line-height: 20px;
             margin: 0;
         }
+@media (max-width: 768px) {
+    .follow-us p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
 .animated-icon1, .animated-icon2, .animated-icon3 {
     width: 20px;
     height: 20px;
@@ -428,6 +441,8 @@ h3.section-title {
 @media (max-width: 768px) {
     h3.section-title {
         margin-bottom: 19px;
+        font-size: 26px;
+        line-height: 34px;
     }
 }
 .text-content {
@@ -435,6 +450,11 @@ h3.section-title {
     font-size: 13px;
     color: #666666;
     line-height: 26px;
+}
+@media (max-width: 768px) {
+    .text-content {
+        line-height: 22px;
+    }
 }
 .qr-code-block_left {
     display: -webkit-box;
@@ -524,6 +544,12 @@ ul.pills-tab li:hover a {
         line-height: 26px;
         margin-bottom: 9px;
     }
+@media (max-width: 768px) {
+    .article__title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 .date-and-tag {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -563,6 +589,12 @@ ul.pills-tab li:hover a {
     font-weight: 700;
     color: #38A6A0;
     margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .people__name {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 .people__job {
     font-family: 'Open Sans', sans-serif;
@@ -618,6 +650,12 @@ ul.pills-tab li:hover a {
     }
 }
 @media (max-width: 768px) {
+    .features__post .bigger-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 768px) {
     .features__title-block {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -638,9 +676,18 @@ ul.pills-tab li:hover a {
     line-height: 34px;
     margin-bottom: 9px;
 }
+@media (max-width: 768px) {
+    .bigger-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
 .video {
     margin-bottom: 100px;
 }
+.video .video-wrapper {
+        position: relative;
+    }
 @media (max-width: 768px) {
     .video {
         margin-bottom: 50px;
@@ -654,6 +701,22 @@ ul.pills-tab li:hover a {
 @media (max-width: 768px) {
     .video img {
         width: 100%;
+    }
+}
+.video video {
+        outline: none;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        z-index: 0;
+        width: 80%;
+        height: 100%;
+}
+@media (max-width: 768px) {
+    .video video {
+        width: 100%;
+        left: 0;
     }
 }
 .bot-banner {
@@ -711,6 +774,13 @@ ul.pills-tab li:hover a {
         line-height: 70px;
         margin: 0;
 }
+@media (max-width: 768px) {
+    .page-item-banner p.page-heading {
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
 .fx-mayr-service {
     margin-bottom: 100px;
 }
@@ -720,7 +790,7 @@ ul.pills-tab li:hover a {
     }
 }
 .fx-mayr-service select#select-service {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 34px;
 }
 @media (max-width: 768px) {
@@ -760,6 +830,18 @@ ul.pills-tab li:hover a {
 .fx-mayr-service .tab-pane {
         margin-bottom: 51px;
 }
+/* video play */
+.fx-mayr-service .video {
+        margin-bottom: 0;
+}
+.fx-mayr-service .video img {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+.fx-mayr-service .video video {
+            width: 100%;
+            left: 0;
+        }
 .project-block {
     margin-bottom: 40px;
 }
@@ -780,6 +862,12 @@ ul.pills-tab li:hover a {
     line-height: 34px;
     margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+    .project__title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 .article-item {
     margin-bottom: 32px;
 }
@@ -795,6 +883,8 @@ ul.pills-tab li:hover a {
 @media (max-width: 768px) {
     .article__date {
         width: 60%;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 #fx-mayr-retreat, #fx-mayr-club {
@@ -961,6 +1051,26 @@ select {
     margin-top: -7px;
     margin-right: 2px;
 }
+/* Video-modal styles */
+.modal-dialog {
+      max-width: 800px;
+      margin: 50px auto;
+  }
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:32px;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
 /* discover page components */
 .discover-post {
     margin-bottom: 100px;
@@ -999,6 +1109,12 @@ select {
     color: #38A6A0;
     line-height: 60px;
     margin-bottom: 9px;
+}
+@media (max-width: 768px) {
+    .discover-post__title {
+        font-size: 26px;
+        line-height: 34px;
+    }
 }
 .discover-filter {
     margin-bottom: 43px;
@@ -1113,11 +1229,23 @@ select {
         line-height: 60px;
         margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+    .discover-article__heading-block p.article__title, .discover-article__content p.article__title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
 .discover-article__heading-block p.text-content, .discover-article__content p.text-content {
         font-weight: 700;
         font-size: 16px;
         color: #4A4A4A;
         line-height: 28px;
+}
+@media (max-width: 768px) {
+    .discover-article__heading-block p.text-content, .discover-article__content p.text-content {
+        font-size: 13px;
+        line-height: 22px;
+    }
 }
 .discover-article {
     margin-bottom: 100px;
@@ -1133,13 +1261,25 @@ select {
         color: #666666;
         line-height: 26px;
     }
+@media (max-width: 768px) {
+    .discover-article__content p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
 .discover-article__content p strong {
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
             font-size: 16px;
             color: #4a4a4a;
             line-height: 28px;
-        }
+}
+@media (max-width: 768px) {
+    .discover-article__content p strong {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
 /* contact page components */
 .contact-form {
     width: 50%;

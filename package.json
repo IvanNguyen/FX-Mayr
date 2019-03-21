@@ -27,7 +27,7 @@
   },
   "scripts": {
     "build": "ENVIRONMENT=production gulp build",
-    "serve": "gulp serve"
+    "serve": "ENVIRONMENT=local gulp serve"
    
   }
 }
