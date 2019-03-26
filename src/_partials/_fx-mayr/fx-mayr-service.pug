@@ -8,11 +8,11 @@ section.fx-mayr-service
             .arrow
         ul.pills-tab.nav.nav-pills
             li.nav-item
-                a#retreat-club-introduction-jump.nav-link(href='#introduction') Retreat & Club introduction
+                a#retreat-club-introduction-jump.nav-link(href='#introduction',title="introduction") Retreat & Club introduction
             li.nav-item
-                a#fx-mayr-retreat-jump.nav-link(href='#fx-mayr-retreat') The Original F.X. Mayr Retreats
+                a#fx-mayr-retreat-jump.nav-link(href='#fx-mayr-retreat',title="retreats") The Original F.X. Mayr Retreats
             li.nav-item
-                a#fx-mayr-club-jump.nav-link(href='#fx-mayr-club') The Original F.X. Mayr Clubs
+                a#fx-mayr-club-jump.nav-link(href='#fx-mayr-club',title="clubs") The Original F.X. Mayr Clubs
         .service-item.introduction#retreat-club-introduction
             h3.section-title
                 | Retreat & Club introduction
@@ -22,8 +22,8 @@ section.fx-mayr-service
                         .features__title-block.video
                             //- include "../_homepage/video.pug"
                             .video-wrapper
-                                img.video__image#video01( src="../assets/img/video-bg-02.png", alt="video-background-02-img")
-                                video.video__play.video01(controls='' autoplay='')
+                                img.video__image#video02( src="../assets/img/video-bg-02.png", alt="video-background-02-img")
+                                video.video__play.video02#0(controls='')
                                     source(src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', type='video/mp4')
                                     //- source(src='mov_bbb.ogg', type='video/ogg')
                                     |   Your browser does not support HTML5 video.
@@ -35,8 +35,8 @@ section.fx-mayr-service
                     .features__post
                         .features__title-block.video
                             .video-wrapper
-                                img.video__image#video02( src="../assets/img/video-bg-03.png", alt="video-background-03-img")
-                                video.video__play.video02(controls='' autoplay='')
+                                img.video__image#video03( src="../assets/img/video-bg-03.png", alt="video-background-03-img")
+                                video.video__play.video03#1(controls='')
                                     source(src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', type='video/mp4')
                                     //- source(src='mov_bbb.ogg', type='video/ogg')
                                     |   Your browser does not support HTML5 video.
@@ -67,7 +67,7 @@ section.fx-mayr-service
                 | Retreats under development
             //- Tab-item section
             form.select-tab
-                select#mySelect
+                select#my-select
                     option(value='0') Item 1
                     option(value='1') Item 2
                     option(value='2') Item 3
@@ -76,15 +76,15 @@ section.fx-mayr-service
                 .arrow
             ul.pills-tab.nav.nav-pills(role='tablist')
                 li.nav-item
-                    a#pills-item1-tab.nav-link.active(data-toggle='pill', href='#pills-item1', role='tab', aria-controls='pills-item1', aria-selected='true') Item 1
+                    a#pills-item1-tab.nav-link.active(data-toggle='pill', href='#pills-item1', role='tab', aria-controls='pills-item1', aria-selected='true', title="item") Item 1
                 li.nav-item
-                    a#pills-item2-tab.nav-link(data-toggle='pill', href='#pills-item2', role='tab', aria-controls='pills-item2', aria-selected='false') Item 2
+                    a#pills-item2-tab.nav-link(data-toggle='pill', href='#pills-item2', role='tab', aria-controls='pills-item2', aria-selected='false', title="item") Item 2
                 li.nav-item
-                    a#pills-item3-tab.nav-link(data-toggle='pill', href='#pills-item3', role='tab', aria-controls='pills-item3', aria-selected='false') Item 3
+                    a#pills-item3-tab.nav-link(data-toggle='pill', href='#pills-item3', role='tab', aria-controls='pills-item3', aria-selected='false', title="item") Item 3
                 li.nav-item
-                    a#pills-item4-tab.nav-link(data-toggle='pill', href='#pills-item4', role='tab', aria-controls='pills-item4', aria-selected='false') Item 4
+                    a#pills-item4-tab.nav-link(data-toggle='pill', href='#pills-item4', role='tab', aria-controls='pills-item4', aria-selected='false', title="item") Item 4
                 li.nav-item
-                    a#pills-item5-tab.nav-link(data-toggle='pill', href='#pills-item5', role='tab', aria-controls='pills-item5', aria-selected='false') Item 5
+                    a#pills-item5-tab.nav-link(data-toggle='pill', href='#pills-item5', role='tab', aria-controls='pills-item5', aria-selected='false', title="item") Item 5
             #pills-tabContent.tab-content
                 #pills-item1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-item1-tab')
                     .row.article-item
@@ -159,7 +159,7 @@ section.fx-mayr-service
                 | Retreats under development
             //- Tab-item section
             form.select-tab
-                select#mySelect
+                select#my-select
                     option(value='0') Item 1
                     option(value='1') Item 2
                     option(value='2') Item 3
@@ -168,15 +168,15 @@ section.fx-mayr-service
                 .arrow
             ul.pills-tab.nav.nav-pills(role='tablist')
                 li.nav-item
-                    a#pills-item2-1-tab.nav-link.active(data-toggle='pill', href='#pills-item2-1', role='tab', aria-controls='pills-item2-1', aria-selected='true') Item 1
+                    a#pills-item2-1-tab.nav-link.active(data-toggle='pill', href='#pills-item2-1', role='tab', aria-controls='pills-item2-1', aria-selected='true',title="item") Item 1
                 li.nav-item
-                    a#pills-item2-2-tab.nav-link(data-toggle='pill', href='#pills-item2-2', role='tab', aria-controls='pills-item2-2', aria-selected='false') Item 2
+                    a#pills-item2-2-tab.nav-link(data-toggle='pill', href='#pills-item2-2', role='tab', aria-controls='pills-item2-2', aria-selected='false',title="item") Item 2
                 li.nav-item
-                    a#pills-item2-3-tab.nav-link(data-toggle='pill', href='#pills-item2-3', role='tab', aria-controls='pills-item2-3', aria-selected='false') Item 3
+                    a#pills-item2-3-tab.nav-link(data-toggle='pill', href='#pills-item2-3', role='tab', aria-controls='pills-item2-3', aria-selected='false',title="item") Item 3
                 li.nav-item
-                    a#pills-item2-4-tab.nav-link(data-toggle='pill', href='#pills-item2-4', role='tab', aria-controls='pills-item2-4', aria-selected='false') Item 4
+                    a#pills-item2-4-tab.nav-link(data-toggle='pill', href='#pills-item2-4', role='tab', aria-controls='pills-item2-4', aria-selected='false',title="item") Item 4
                 li.nav-item
-                    a#pills-item2-5-tab.nav-link(data-toggle='pill', href='#pills-item2-5', role='tab', aria-controls='pills-item2-5', aria-selected='false') Item 5
+                    a#pills-item2-5-tab.nav-link(data-toggle='pill', href='#pills-item2-5', role='tab', aria-controls='pills-item2-5', aria-selected='false',title="item") Item 5
             #pills-tabContent.tab-content
                 #pills-item2-1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-item2-1-tab')
                     .row.article-item

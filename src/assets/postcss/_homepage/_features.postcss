@@ -18,23 +18,14 @@
         @media (max-width: $md-screen) {
             display: flex;
         }
-        img {
-            flex: 50%;
-            padding-right: 14px;
-        }
         p {
-            flex: 50%;
+            padding-left: 14px;
         }
-    }
-}
-.bigger-title {
-    font-weight: 700;
-    font-size: 22px;
-    color: $title-color;
-    line-height: 34px;
-    margin-bottom: 9px;
-    @media (max-width: $md-screen) {
-        font-size: 20px;
-        line-height: 30px;
+        &__column {
+            @media (max-width: $md-screen) {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
     }
 }

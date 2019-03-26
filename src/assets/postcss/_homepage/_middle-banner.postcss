@@ -1,4 +1,5 @@
 .middle-banner {
+    position: relative;
     margin: 100px 0;
     height: 300px;
     @media (max-width: $md-screen) {
@@ -13,15 +14,30 @@
         }
     }
 }
-.lg-background {
-    display: block;
+.middle-banner__text {
+    position: absolute;
+    top: 90px;
+    right: 15%;
+    text-align: right;
     @media (max-width: $md-screen) {
-        display: none;
+        top: 40px;
     }
-}
-.md-background {
-    display: none;
-    @media (max-width: $md-screen) {
-        display: block;
+    p {
+        font-size: 40px;
+        color: #000000;
+        line-height: 60px;
+        margin-bottom: 0;
+        @media (max-width: $md-screen) {
+            font-size: 26px;
+            line-height: 34px;
+        }
+        span {
+            color: $title-color;
+        }
+    }
+    &_desktop {
+        @media (max-width: $md-screen) {
+            display: none;
+        }
     }
 }

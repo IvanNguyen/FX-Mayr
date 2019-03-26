@@ -6968,6 +6968,11 @@ units-css@^0.4.0:
     isnumeric "^0.2.0"
     viewport-dimensions "^0.2.0"
 
+universal-parallax@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/universal-parallax/-/universal-parallax-1.3.2.tgz#b79c681f0477819eeee5aea4590448e18e3cbede"
+  integrity sha512-Q0QfwwZQVqfOQ4i6/xklyfOfEduqzuEROkFdoJxJQrAWk8o9la9ZKxMmSkHRLpTabm0TUiTLezQ3+7kLsCmJrA==
+
 universalify@^0.1.0:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
