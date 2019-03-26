@@ -10,11 +10,11 @@ section
                         | Would you like to be called?
                 input(type='tel',id="optional-phone-number" name='telephone-number', placeholder="Phone number")
                 .called-info
-                    input(type='tel',id="required-phone-number" name='telephone-number', placeholder="Phone number*", required)
+                    input.required-input(type='tel',id="required-phone-number" name='telephone-number', placeholder="Phone number*")
                     .call-time
                         .call-date.d-inline-block
                             .d-flex.align-items-center
-                                input(type='text', id="datepicker", name='call-date', placeholder="June 4, 2018", required)
+                                input.required-input(type='text', id="datepicker", name='call-date', placeholder="June 4, 2018")
                                 i.far.fa-calendar-alt
                         .radio-time.radio-time_morning
                             input(type='radio', id="morning-call", name='call-time', value='morning' checked)
@@ -24,5 +24,5 @@ section
                             input(type='radio', id="afternoon-call", name='call-time', value='afternoon')
                             label(for="afternoon-call")
                                 | Afternoon
-                textarea(name='message', placeholder='Message', rows='10', cols='50', required='')
+                textarea(name='message', placeholder='Message*', rows='10', cols='50', required='')
                 input(type='submit', value='Send')

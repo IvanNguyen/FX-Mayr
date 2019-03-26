@@ -24,24 +24,38 @@ $(document).ready(function () {
     // });
     // Would you like to be called ?
     $('#be-called').click(function () {
-        $('.called-info, #optional-phone-number').toggle(); 
+        $('.called-info, #optional-phone-number').toggle();
+        var requiredPhoneNumber = $('.required-input')[0].hasAttribute('required');
+        var requiredDate = $('.required-input')[1].hasAttribute('required');
+        if (!requiredPhoneNumber && !requiredDate) {
+            $('.required-input').attr('required','required');
+        } else {
+            $('.required-input').removeAttr('required');
+        }
     });
     // Header animation
     $(window).scroll(function () {
         // check header full view to stop the animation-on mobie view
         var checkHeaderFullView = $('.header').hasClass("full-view");
-        if ($(window).scrollTop() > 240 && !checkHeaderFullView) {
-            $('.header').addClass('header--sticked');
-            $('.header__logo img').attr('src', 'assets/img/FX-Mayr-Logo-Sticky.png');
-            $(".header__nav").css("padding-left", "0");
-        } else {
-            $('.header').removeClass('header--sticked');
-            $('.header__logo img').attr('src', 'assets/img/FX-Mayr-Logo-01.png');
-            $(".header__nav").css("padding-left", "15%");
-        }
+        // if ($(window).scrollTop() > 240 && !checkHeaderFullView) {
+        //     $('.header').addClass('header--sticked');
+        //     $('.header__logo img').attr('src', 'assets/img/FX-Mayr-Logo-Sticky.png');
+        //     $(".header__nav").css("padding-left", "0");
+        // } else {
+        //     $('.header').removeClass('header--sticked');
+        //     $('.header__logo img').attr('src', 'assets/img/FX-Mayr-Logo-01.png');
+        //     $(".header__nav").css("padding-left", "15%");
+        // }
+        
+        // Optimize code above
+        const isTop = $(window).scrollTop() > 240 && !checkHeaderFullView;
+        const header = $('.header');
+        header.toggleClass('header--sticked', isTop);
+        header.find('.header__logo img').attr('src', isTop ? 'assets/img/FX-Mayr-Logo-Sticky.png' : 'assets/img/FX-Mayr-Logo-01.png');
+        header.find(".header__nav").css("padding-left", isTop ? "0" : "15%");
     });
     // Hamburger-icon
-    $('.first-button').on('click', function () {
+    $('.trigger-menu-button').on('click', function () {
         $('.animated-icon1').toggleClass('open');
     });
     // Toggle-menu-button
@@ -57,7 +71,7 @@ $(document).ready(function () {
         });
     });
     // Select tab people-page
-    $('#mySelect').on('change', function (e) {
+    $('#my-select').on('change', function (e) {
         $('#myTab li a').eq($(this).val()).tab('show');
     });
     // Select service - Fx-Mayr page
@@ -74,13 +88,16 @@ $(document).ready(function () {
     $('.video__image').on('click', function () {
         $(this).css('opacity', '0');
         $('.' + this.id).css("display", "block");
+        // $('video').attr('autoplay','true');
+        // $('video').get(0).play();
+        $('video.' + this.id).trigger('play');
+
     });
     // Video modal
     var $videoSrc;
     $('.video-btn').click(function () {
         $videoSrc = $(this).data("src");
     });
-    console.log($videoSrc);
     // when the modal is opened autoplay it  
     $('#myModal').on('shown.bs.modal', function (e) {
         // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
@@ -94,18 +111,22 @@ $(document).ready(function () {
 });
 //trigger collapse people-items
 (function ($) {
-    var $window = $(window)
+    var $window = $(window);
     function resize() {
         if ($window.width() < 768) {
             return (
                 $('.collapseItem').addClass('collapse'),
                 // fx-mayr service on mobile view
-                $('.service-item').removeClass('d-block')
+                $('.service-item').removeClass('d-block'),
+                // header-menu display when resize form mobile to desktop
+                $('.header').removeClass('height-auto')
             );
         }
         $('.collapseItem').removeClass('collapse');
         // fx-mayr service on mobile view
         $('.service-item').addClass('d-block');
+        // header-menu display when resize form mobile to desktop
+        $('.header').addClass('height-auto');
     }
     $window
         .resize(resize)

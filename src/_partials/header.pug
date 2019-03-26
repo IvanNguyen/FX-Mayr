@@ -5,34 +5,35 @@ header.header
             .col-12
                 .header-wrapper.d-flex
                     .header__logo-wrapper
-                        a.header__logo(href="index.html")
+                        a.header__logo(href="index.html", title="logo")
                             img(src="../assets/img/FX-Mayr-Logo-01.png", alt="logo")
                         span.toggle-menu-button
-                            button.first-button(type='button')
-                                span.animated-icon.d-block
+                            button.trigger-menu-button(type='button')
+                                | trigger menu button
+                                .animated-icon1
                                     span
                                     span
                                     span
                     nav.header__navbar-wrapper
                         ul.header__nav#header__nav
                             li.menu__item
-                                a(href="fx-mayr.html") F.X Mayr
+                                a(href="fx-mayr.html", title="fx mayr page") F.X Mayr
                             li.menu__item
-                                a(href="people.html") People
+                                a(href="people.html", title="people page") People
                             li.menu__item
-                                a(href="discover.html") Discover
+                                a(href="discover.html", title="discover page") Discover
                             li.menu__item
-                                a(href="contact.html") Contact us
+                                a(href="contact.html", title="contact page") Contact us
                             li.header__weixin-qrcode
                                 i.fab.fa-weixin
                                 .header__weixin-qrcode__popover
                                     img(src="../assets/img/qr-code.png", alt="weixin-qrcode")
                         ul.header__lang-switcher
                             li
-                                a(href="#") 中文
+                                a(href="#", title="chinese") 中文
                             li
-                                a.lang-current(href="#") EN
+                                a.lang-current(href="#", title="engligsh") EN
                             li
-                                a(href="#") DE
+                                a(href="#", title="de") DE
                     
 

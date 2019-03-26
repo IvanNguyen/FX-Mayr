@@ -1,7 +1,7 @@
 section.teams
     .container
         form.select-tab
-            select#mySelect
+            select#my-select
                 option(value='0') Executive Team
                 option(value='1') Retreats Executive Teams
                 option(value='2') Clubs Executive Teams
@@ -10,17 +10,17 @@ section.teams
             .arrow
         ul#myTab.pills-tab.nav.nav-pills(role='tablist')
             li.nav-item
-                a#pills-Executive-Team-tab.nav-link.active(data-toggle='pill', href='#pills-Executive-Team', role='tab', aria-controls='pills-Executive-Team', aria-selected='true') Executive Team
+                a#pills-executive-team-tab.nav-link.active(data-toggle='pill', href='#pills-executive-team', role='tab', aria-controls='pills-executive-team', aria-selected='true',title="executive team") Executive Team
             li.nav-item
-                a#pills-Retreats-Executive-Teams-tab.nav-link(data-toggle='pill', href='#pills-Retreats-Executive-Teams', role='tab', aria-controls='pills-Retreats-Executive-Teams', aria-selected='false') Retreats Executive Teams
+                a#pills-retreats-executive-teams-tab.nav-link(data-toggle='pill', href='#pills-retreats-executive-teams', role='tab', aria-controls='pills-retreats-executive-teams', aria-selected='false',title="retreats teams") Retreats Executive Teams
             li.nav-item
-                a#pills-Clubs-Executive-Teams-tab.nav-link(data-toggle='pill', href='#pills-Clubs-Executive-Teams', role='tab', aria-controls='pills-Clubs-Executive-Teams', aria-selected='false') Clubs Executive Teams
+                a#pills-clubs-executive-teams-tab.nav-link(data-toggle='pill', href='#pills-clubs-executive-teams', role='tab', aria-controls='pills-clubs-executive-teams', aria-selected='false',title="clubs executive teams") Clubs Executive Teams
             li.nav-item
-                a#pills-International-Experts-tab.nav-link(data-toggle='pill', href='#pills-International-Experts', role='tab', aria-controls='pills-International-Experts', aria-selected='false') International Experts
+                a#pills-international-experts-tab.nav-link(data-toggle='pill', href='#pills-international-experts', role='tab', aria-controls='pills-international-experts', aria-selected='false',title="international experts") International Experts
             li.nav-item
-                a#pills-Partner-Sponsors-tab.nav-link(data-toggle='pill', href='#pills-Partner-Sponsors', role='tab', aria-controls='pills-Partner-Sponsors', aria-selected='false') Partner & Sponsors
+                a#pills-partner-sponsors-tab.nav-link(data-toggle='pill', href='#pills-partner-sponsors', role='tab', aria-controls='pills-partner-sponsors', aria-selected='false',title="partner & sponsors") Partner & Sponsors
         #pills-tabContent.tab-content
-            #pills-Executive-Team.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-Executive-Team-tab')
+            #pills-executive-team.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-executive-team-tab')
                 .media
                     .media-avatar
                         img(src='../assets/img/people-01.png', alt='people-01-image')
@@ -45,16 +45,6 @@ section.teams
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
-                                //- // Modal
-                                //- #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
-                                //-     .modal-dialog(role='document')
-                                //-         .modal-content
-                                //-             .modal-body
-                                //-                 button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                //-                     span(aria-hidden='true') &times;
-                                //-                 // 16:9 aspect ratio
-                                //-                 .embed-responsive.embed-responsive-16by9
-                                //-                     iframe#video.embed-responsive-item(src='', allowscriptaccess='always', allow='autoplay')
                 .media
                     .media-avatar
                         img(src='../assets/img/people-02.png', alt='people-02-image')
@@ -121,7 +111,7 @@ section.teams
                                 img(src="../assets/img/play-video-button.png", alt="play-video-button")
                                 span
                                     | Watch the video
-            #pills-Retreats-Executive-Teams.tab-pane.fade(role='tabpanel', aria-labelledby='pills-Retreats-Executive-Teams-tab')
+            #pills-retreats-executive-teams.tab-pane.fade(role='tabpanel', aria-labelledby='pills-retreats-executive-teams-tab')
                 .media
                     .media-avatar
                         img(src='../assets/img/people-02.png', alt='people-02-image')
