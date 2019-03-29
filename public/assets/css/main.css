@@ -14,7 +14,7 @@
     background: white;
 }
 .toggle-menu-button button span {
-        background-color: #4a4a4a;
+        background-color: transparent;
     }
 .header__logo-wrapper {
     width: 296px;
@@ -270,7 +270,7 @@ footer {
     }
 }
 /* Icon 1 */
-.animated-icon1{
+span.animated-icon1{
 width: 20px;
 height: 20px;
 position: relative;
@@ -280,7 +280,7 @@ transform: rotate(0deg);
 transition: .5s ease-in-out;
 cursor: pointer;
 }
-.animated-icon1 span {
+span.animated-icon1 span {
 display: block;
 position: absolute;
 height: 3px;
@@ -292,8 +292,8 @@ left: 0;
 transform: rotate(0deg);
 transition: .25s ease-in-out;
 }
-.animated-icon1 span {
-background: #e65100;
+span.animated-icon1 span {
+background: #4a4a4a;
 }
 .animated-icon2 span {
 background: #e3f2fd;
@@ -301,25 +301,25 @@ background: #e3f2fd;
 .animated-icon3 span {
 background: #f3e5f5;
 }
-.animated-icon1 span:nth-child(1) {
+span.animated-icon1 span:nth-child(1) {
 top: 6px;
 }
-.animated-icon1 span:nth-child(2) {
+span.animated-icon1 span:nth-child(2) {
 top: 12px;
 }
-.animated-icon1 span:nth-child(3) {
+span.animated-icon1 span:nth-child(3) {
 top: 18px;
 }
-.animated-icon1.open span:nth-child(1) {
+span.animated-icon1.open span:nth-child(1) {
 top: 11px;
 -webkit-transform: rotate(135deg);
 transform: rotate(135deg);
 }
-.animated-icon1.open span:nth-child(2) {
+span.animated-icon1.open span:nth-child(2) {
 opacity: 0;
 left: -60px;
 }
-.animated-icon1.open span:nth-child(3) {
+span.animated-icon1.open span:nth-child(3) {
 top: 11px;
 -webkit-transform: rotate(-135deg);
 transform: rotate(-135deg);

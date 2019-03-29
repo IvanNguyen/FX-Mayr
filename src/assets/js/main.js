@@ -63,6 +63,14 @@ $(document).ready(function () {
         $('.header').toggleClass('full-view');
         $('.header__navbar-wrapper').toggleClass('d-flex');
     });
+    // Keyup ESC to close menu on mobile view
+    $(document).keyup(function (e) {
+        if (e.keyCode === 27) { // esc code
+            $('.animated-icon1').removeClass('open');
+            $('.header').removeClass('full-view');
+            $('.header__navbar-wrapper').removeClass('d-flex');
+        }
+    });
     // Discover-article filter
     $("#search-filter").on("keyup", function () {
         var value = $(this).val().toLowerCase();
