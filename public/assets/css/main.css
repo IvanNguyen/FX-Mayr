@@ -152,8 +152,7 @@ li.header__weixin-qrcode:hover .header__weixin-qrcode__popover {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     position: fixed!important;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0)
+    transform: translateZ(0)
 }
 .header--sticked .header__logo img {
     max-width: 110px;
@@ -165,22 +164,18 @@ li.header__weixin-qrcode:hover .header__weixin-qrcode__popover {
 }
 @-webkit-keyframes stickyIn {
     0% {
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%)
+        transform: translateY(-100%)
     }
     to {
-        -webkit-transform: translateY(0);
-                transform: translateY(0)
+        transform: translateY(0)
     }
 }
 @keyframes stickyIn {
     0% {
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%)
+        transform: translateY(-100%)
     }
     to {
-        -webkit-transform: translateY(0);
-                transform: translateY(0)
+        transform: translateY(0)
     }
 }
 /* Mobile-header fullview */
@@ -275,7 +270,6 @@ width: 20px;
 height: 20px;
 position: relative;
 margin: 0px;
--webkit-transform: rotate(0deg);
 transform: rotate(0deg);
 transition: .5s ease-in-out;
 cursor: pointer;
@@ -288,7 +282,6 @@ width: 100%;
 border-radius: 9px;
 opacity: 1;
 left: 0;
--webkit-transform: rotate(0deg);
 transform: rotate(0deg);
 transition: .25s ease-in-out;
 }
@@ -312,7 +305,6 @@ top: 18px;
 }
 span.animated-icon1.open span:nth-child(1) {
 top: 11px;
--webkit-transform: rotate(135deg);
 transform: rotate(135deg);
 }
 span.animated-icon1.open span:nth-child(2) {
@@ -321,7 +313,6 @@ left: -60px;
 }
 span.animated-icon1.open span:nth-child(3) {
 top: 11px;
--webkit-transform: rotate(-135deg);
 transform: rotate(-135deg);
 }
 .trigger-menu-button {
@@ -619,8 +610,7 @@ ul.pills-tab li:hover a {
     border-color: transparent #38a6a0 #38a6a0 transparent;
     border-style: solid;
     border-width: 1px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     position: absolute;
     right: 0;
     top: 50%;
@@ -840,12 +830,12 @@ ul.pills-tab li:hover a {
         max-width: 50%;
     }
 }
-.video {
-    margin-bottom: 100px;
-}
 .video .video-wrapper {
         position: relative;
     }
+.video {
+    margin-bottom: 100px;
+}
 @media (max-width: 768px) {
     .video {
         margin-bottom: 50px;

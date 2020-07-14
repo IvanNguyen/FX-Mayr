@@ -11,7 +11,7 @@ for (var i = 0; i < menuItem.length; i++) {
     });
 }
 $(document).ready(function () {
-    var images = document.getElementsByClassName('parallax');
+    var images = document.getElementsByClassName('thumbnail');
     var instances = new simpleParallax(images, {
         delay: 0.8,
         orientation: 'down',
@@ -51,8 +51,15 @@ $(document).ready(function () {
         const isTop = $(window).scrollTop() > 240 && !checkHeaderFullView;
         const header = $('.header');
         header.toggleClass('header--sticked', isTop);
-        header.find('.header__logo img').attr('src', isTop ? 'assets/img/FX-Mayr-Logo-Sticky.png' : 'assets/img/FX-Mayr-Logo-01.png');
-        header.find(".header__nav").css("padding-left", isTop ? "0" : "15%");
+        if (isTop) {
+            $('.header__logo img').attr('src', 'assets/img/FX-Mayr-Logo-Sticky.png');
+            $(".header__nav").css("padding-left", "0");
+        } else {
+            $('.header__logo img').attr('src', 'assets/img/FX-Mayr-Logo-01.png');
+            $(".header__nav").css("padding-left", "15%");
+        }
+        // header.find('.header__logo img').attr('src', isTop ? 'assets/img/FX-Mayr-Logo-Sticky.png' : 'assets/img/FX-Mayr-Logo-01.png');
+        // header.find(".header__nav").css("padding-left", isTop ? "0" : "15%");
     });
     // Hamburger-icon
     $('.trigger-menu-button').on('click', function () {
@@ -99,7 +106,6 @@ $(document).ready(function () {
         // $('video').attr('autoplay','true');
         // $('video').get(0).play();
         $('video.' + this.id).trigger('play');
-
     });
     // Video modal
     var $videoSrc;
@@ -121,6 +127,7 @@ $(document).ready(function () {
 (function ($) {
     var $window = $(window);
     function resize() {
+        // console.log($window.width());
         if ($window.width() < 768) {
             return (
                 $('.collapseItem').addClass('collapse'),
@@ -129,16 +136,17 @@ $(document).ready(function () {
                 // header-menu display when resize form mobile to desktop
                 $('.header').removeClass('height-auto')
             );
+        } else {
+            $('.collapseItem').removeClass('collapse');
+            // fx-mayr service on mobile view
+            $('.service-item').addClass('d-block');
+            // header-menu display when resize form mobile to desktop
+            $('.header').addClass('height-auto');
         }
-        $('.collapseItem').removeClass('collapse');
-        // fx-mayr service on mobile view
-        $('.service-item').addClass('d-block');
-        // header-menu display when resize form mobile to desktop
-        $('.header').addClass('height-auto');
     }
     $window
-        .resize(resize)
-        .trigger('resize');
+        .resize(resize);
+        // .trigger('resize');
 })(jQuery);
 // Jquery Datepicker
 $(function () {
